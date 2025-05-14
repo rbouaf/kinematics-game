@@ -1,30 +1,32 @@
-![GameDemo]()
+![GameDemoGif](https://github.com/rbouaf/kinematics-game/blob/5823eb4d5369fbb0dce758f71535f6290a8f4e54/DemoGame.gif)
+
 ## 420-204-RE - Vanier College
 
 An educative simulation game using kinematics concepts.
 ## User Interface
-
 ### Menu Screen
+![GameDemo](https://github.com/rbouaf/kinematics-game/blob/5823eb4d5369fbb0dce758f71535f6290a8f4e54/TitleDemo.gif)
 
 Upon opening the game, the main menu screen presents two options: "Play" and "Options". Selecting "Play" navigates the user to the [Level Selection Screen](#level-selection-screen), while "Options" leads to the options screen.
 
 ### Level Selection Screen
+![GameDemo](https://github.com/rbouaf/kinematics-game/blob/5823eb4d5369fbb0dce758f71535f6290a8f4e54/LevelSelectionDemo.png)
 
 This screen allows players to choose a level or return to the [Menu Screen](#menu-screen) via a "Back" button. Initially, only level 1 is accessible. Subsequent levels are unlocked upon successful completion of the preceding one.
 
 ### Shop Screen
-
+![GameDemo](https://github.com/rbouaf/kinematics-game/blob/5823eb4d5369fbb0dce758f71535f6290a8f4e54/ShopDemo.png)
 The shop provides players with the opportunity to purchase in-game items by clicking their respective icons. The player's funds and inventory are managed by the `playerBankAndInventory.java` class. Three types of projectiles are available: grenades, Molotov cocktails, and bullets, each possessing unique properties. Grenades inflict high damage, Molotov cocktails have a larger hitbox but deal less damage, and bullets travel in a straight line due to a high initial velocity, offering greater precision at a higher cost. The shop introduces a strategic layer to the game, requiring players to manage their resources effectively. A "Start" button allows players to begin the selected level at any time.
 
 ### In-Game
 
 The in-game interface displays the player's ship on the left and the enemy's ship on the right, separated by a significant distance. A vector originates from the player's ship and dynamically extends to the user's mouse cursor, indicating the intended initial velocity and angle of the shot. Clicking the mouse launches a projectile based on projectile motion principles. The objective is to deplete the enemies' health points to zero.
 
-![Example from level 1](path/to/level1_screenshot.png)
+![Example from level 1](https://github.com/rbouaf/kinematics-game/blob/5823eb4d5369fbb0dce758f71535f6290a8f4e54/Level1Demo.png)
 *(Example from level 1)*
 
-![Example from level 3](path/to/level3_screenshot.png)
-*(Example from level 3)*
+![Example from level 2](https://github.com/rbouaf/kinematics-game/blob/5823eb4d5369fbb0dce758f71535f6290a8f4e54/Level2Demo.png)
+*(Example from level 2)*
 
 ## Implementation Part-1: Algorithm and Application Logic
 
@@ -123,40 +125,36 @@ The project's codebase is structured into several Java classes:
 
 **Menu screen:**
 
-![Menu Screen Wireframe](path/to/menu_wireframe.png)
-
-**Options screen:**
-
-![Options Screen Wireframe](path/to/options_wireframe.png)
+![Menu Screen Wireframe](https://github.com/rbouaf/kinematics-game/blob/5823eb4d5369fbb0dce758f71535f6290a8f4e54/WireTitle.png)
 
 **Level Selection Screen:**
 
-![Level Selection Screen Wireframe](path/to/level_select_wireframe.png)
+![Level Selection Screen Wireframe](https://github.com/rbouaf/kinematics-game/blob/5823eb4d5369fbb0dce758f71535f6290a8f4e54/WireLevel.png)
 
 **Shop screen:**
 
-![Shop Screen Wireframe](path/to/shop_wireframe.png)
+![Shop Screen Wireframe](https://github.com/rbouaf/kinematics-game/blob/5823eb4d5369fbb0dce758f71535f6290a8f4e54/WireShop.png)
 
 **In-game screen:**
 
-![In-game Screen Wireframe](path/to/ingame_wireframe.png)
+![In-game Screen Wireframe](https://github.com/rbouaf/kinematics-game/blob/5823eb4d5369fbb0dce758f71535f6290a8f4e54/WireGame.png)
 
 ### Diagrams
 
 #### Use Case Diagram
 
-![Use Case Diagram](path/to/use_case_diagram.png)
+![Use Case Diagram](https://github.com/rbouaf/kinematics-game/blob/5823eb4d5369fbb0dce758f71535f6290a8f4e54/UseCase.png)
 
 #### Class Diagram
 
-![Class Diagram](path/to/class_diagram.png)
+![Class Diagram](https://github.com/rbouaf/kinematics-game/blob/5823eb4d5369fbb0dce758f71535f6290a8f4e54/UMLe.png)
 
 
 ### Challenges
 
 #### Coding Challenges
 
-One of the initial hurdles was implementing seamless scene transitions and ensuring the reusability of scenes for "Back" button functionality. This was resolved by creating the `SceneController` class, as detailed in [Implementation Part-2](#implementation-part-2-integration-of-individual-parts).
+One of the initial hurdles was implementing seamless scene transitions and ensuring the reusability of scenes for "Back" button functionality. This was resolved by creating the `SceneController` class, as detailed in the full report.
 
 Another challenge involved managing button accessibility across different parts of the application. The `ButtonDatabase` class, with its static button variables and getter methods, provided a solution, ensuring buttons were accessible throughout the program's runtime. An additional issue with this approach was the inability to directly modify button properties. This was addressed by setting button properties within their respective getter methods.
 

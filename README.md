@@ -1,7 +1,5 @@
 ![GameDemoGif](https://github.com/rbouaf/kinematics-game/blob/5823eb4d5369fbb0dce758f71535f6290a8f4e54/DemoGame.gif)
 
-## 420-204-RE - Vanier College
-
 An educative simulation game using kinematics concepts.
 ## User Interface
 ### Menu Screen
